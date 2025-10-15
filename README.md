@@ -1,2 +1,2 @@
 # InsectsArctic-2025
-R code for processing BOLD data
+This code is intended for the analysis of DNA Barcoding specimens collected in the Kitikmeot region of Nunavut.
