@@ -188,4 +188,42 @@ ARCBIO <- df19
 rm(df19)
 # Remove all the old now useless data
 rm(ARCB22E,ARCBIO19A,ARCBIO19B,ARCBIO19C,ARCBIO19D,ARCBIO19E,ARCBIO19G,ARCBIO19H,ARCBIO20A,ARCBIO20B,ARCBIO20C,ARCBIO20D,ARCBIO20E,ARCBIO21A,ARCBIO22A,ARCBIOF,MBR1,MBR2,MBR3,MBR4)
-# We know have one consolidated data set.
+# We know have one consolidated data set. Let's save it so we don't need to work with split datasets again.
+write_tsv(x = ARCBIO , "data/ARCBIO.tsv")
+
+# Re-open file so we don't need to do it all over again.
+# ARCBIO <- read_tsv("data/ARCBIO.tsv")
+
+# Let's perform a lil preliminary analysis
+sampleId <- data.frame(table(ARCBIO$sampleId))
+# Interesting. Let's see what markerCodes were used.
+markers <- data.frame(table(ARCBIO$markerCodes))
+# Fascinating, we may have an issue. markerCodes is 756,677 of COI5P out of 1,095,914 objects. So 70-75% of the samples are valid. The others are NA? 
+
+# Let's split off all COI5P markers into their own data frame
+coi5p <- ARCBIO %>%
+  filter(markerCodes == "COI-5P")
+
+# Let's also split off the NA's to their own data frame and compare
+arcbio_noinfo <- ARCBIO %>%
+  filter(is.na(markerCodes))
+
+# Right, so we have 756,677 COI-5P objects and 339,237 N/A DNA Barcode info
+# 756,677 + 339,237 is 1,095,914 objects. Right. Are the lack of markerCodes column valid?
+
+# First unit test, determine 
+table(coi5p$phylum)
+# Right, a whole bunch of things have been COI-5P barcoded.
+
+# Next, check the no marker code info items
+table(arcbio_noinfo$phylum)
+
+# Apparently, we have incomplete data for the NA's in markerCodes as there are plenty of Arthropoda represented. Let's see if any of them have GPS coordinates.
+table(arcbio_noinfo$lat)
+# Bummer. It appears they do.
+# Maybe it's an instrument issue?
+table(arcbio_noinfo$instrument)
+# Nope. Looks like a mix of NovaSeq and MiSeq sequencing.
+# Check if coi5p has the same mix
+table(coi5p$instrument)
+# Same dealio. But NovaSeq and Thermo Ion SS. Thermo Ion exchange stainless steel? Check with Spencer on what this is.
