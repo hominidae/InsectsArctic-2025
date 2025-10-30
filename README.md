@@ -3,10 +3,14 @@
 This code is intended for the analysis of DNA Barcoding specimens collected in the Kitikmeot region of Nunavut. It'll require working with whole specimen sequences and metabarcode sequences.
 
 ### Older samples (2018-2021):
-were submitted to the Barcode of Life Datasystem via the Centre for Biodiversity genomics at the University of Guelph. These are considered whole specimen sequences, as a result they are approximately ~650bp reads of the COI5P DNA barcode region.
+These were submitted to the Barcode of Life Datasystem via the Centre for Biodiversity genomics at the University of Guelph and span from 2018-2021.
+
+These are considered whole specimen sequences, as a result they are approximately ~650bp reads of the COI5P DNA Barcode region.
 
 ### Newer samples (2022-2024):
-were processed using a metabarcoding approach which resulted in shorter reads (150bp-400bp) of the COI5P DNA barcode region.
+These were processed using bulk metabarcoding which resulted in shorter reads (150bp-400bp) of the COI5P DNA Barcode region. The term 'bulk metabarcoding' refers to an entire Malaise bottle being processed rather than individual specimens pulled and PCR sequenced.
+
+The bulk metabarcoding will catch more DNA present from various forms of life with DNA present in a 500mL HDPE Malaise bottle, but the reads are subsequently shorter and less likely to encapsulate the entirety of a DNA barcode region like COI-5P. That's the gist of it anyway. I'm sure the actual lab explanation is very interesting, but the end result is that the shorter reads mean that there is less DNA present to compare against the ~650bp DNA Barcode region collected previously.
 
 ### Access to metabarcoding data:
 The Metabarcoding data is available via Google Drive via this link:\
