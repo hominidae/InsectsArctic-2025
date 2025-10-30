@@ -10,7 +10,7 @@ These are considered whole specimen sequences, as a result they are approximatel
 ### Newer samples (2022-2024):
 These were processed using bulk metabarcoding which resulted in shorter reads (150bp-400bp) of the COI5P DNA Barcode region. The term 'bulk metabarcoding' refers to an entire Malaise bottle being processed rather than individual specimens pulled and PCR sequenced.
 
-The bulk metabarcoding will catch more DNA present from various forms of life with DNA present in a 500mL HDPE Malaise bottle, but the reads are subsequently shorter and less likely to encapsulate the entirety of a DNA barcode region like COI-5P. That's the gist of it anyway. I'm sure the actual lab explanation is very interesting, but the end result is that the shorter reads mean that there is less DNA present to compare against the ~650bp DNA Barcode region collected previously.
+The bulk metabarcoding will catch more DNA present from various forms of life with DNA present in a 500mL HDPE Malaise bottle, but the reads are subsequently shorter and less likely to encapsulate the entirety of a DNA barcode region like COI-5P. That's the gist of it anyway. I'm sure the actual lab explanation is very interesting, but the end result is that the shorter reads mean that there is less DNA present to compare against the ~650bp DNA Barcode region collected during the previous initial survey in 2018-2019.
 
 ### Access to metabarcoding data:
 The Metabarcoding data is available via Google Drive via this link:\
