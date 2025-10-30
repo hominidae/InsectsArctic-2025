@@ -20,5 +20,9 @@ Once the bulk Metabarcoding sequences are made available, the sequences can be a
 # InsectsArctic
 [InsectsArctic](https://github.com/hominidae/InsectsArctic) is the original code written and developed during my MSc at the University of Guelph. Most of the DNA Barcoding specimens from this analysis were from 2018-2019, however some are from periods in between. After 2022, most of the collected malaise trap samples were bulk metabarcoded instead.
 
+See [InsectsArctic.md](https://github.com/hominidae/InsectsArctic-2025/blob/main/InsectsArctic.md) for details on what we will need to import into InsectsArctic-2025 (This repository). Since InsectsArctic contains code related to my MSc, it will need to remain as-is with little modification. Instead, InsectsArctic_2024 will be the repository used to process the data from InsectsArctic and preparing it for analysis in this repository.
+
+Basically, the work flow is 'InsectsArctic' to 'InsectsArctic_2024' to 'InsectsArctic-2025'.
+
 # InsectsArctic_2024
 [InsectsArctic_2024](https://github.com/hominidae/InsectsArctic_2024) was code developed to produce an analysis of DNA Barcoding data and producing a phylogenetic tree using MrBayes. Bayesian inference of phylogeny relies on computation to generate the most likely evolutionary pathway between genetic sequences. Rather than a brief and quick NJT generating these evolutionary links, MrBayes performs at least 2,000,000 iterations of the same calculation to arrive at a consensus for when a specific mutation or SNP occurred and thus propagated, provided the available sequences are a complete representation of the available data set.
