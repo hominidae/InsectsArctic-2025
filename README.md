@@ -8,7 +8,7 @@ were submitted to the Barcode of Life Datasystem via the Centre for Biodiversity
 ### Newer samples (2022-2024):
 were processed using a metabarcoding approach which resulted in shorter reads (150bp-400bp) of the COI5P DNA barcode region.
 
-### Access to the Data:
+### Access to metabarcoding data:
 The Metabarcoding data is available via Google Drive via this link: [2022-2024 Metabarcoding results](https://drive.google.com/drive/folders/1BJ3ADx4dtjJ7CCvT_0YDmxkVAyypIod_?usp=drive_link)
 
 Unfortunately, the sequences themselves are not available yet. Once those are available, they can be aligned and matched against the ~650bp DNA barcodes collected from 2018-2022.
