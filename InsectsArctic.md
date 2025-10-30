@@ -3,6 +3,10 @@ InsectsArctic is the repository for code that contributed to my MSc and it conta
 
 These included the collection of insect specimens via Malaise trap, pitfall, pan traps, and hand collection with aspirators or nets.
 
+## Todo:
+- Determine dates covered by the data
+- Determine communities covered by the data
+
 ## File listing:
 001_LoadSequencingData.R - Loads the DNA sequencing data from BOLD in FASTA format.\
 002_LoadBOLDData.R - Loads data and associated metadata for samples collected in the Kiktmeot from 2018-2022\
