@@ -9,15 +9,18 @@ were submitted to the Barcode of Life Datasystem via the Centre for Biodiversity
 were processed using a metabarcoding approach which resulted in shorter reads (150bp-400bp) of the COI5P DNA barcode region.
 
 ### Access to metabarcoding data:
-The Metabarcoding data is available via Google Drive via this link: [2022-2024 Metabarcoding results](https://drive.google.com/drive/folders/1BJ3ADx4dtjJ7CCvT_0YDmxkVAyypIod_?usp=drive_link)
+The Metabarcoding data is available via Google Drive via this link:\
+[2022-2024 Metabarcoding results](https://drive.google.com/drive/folders/1BJ3ADx4dtjJ7CCvT_0YDmxkVAyypIod_?usp=drive_link)
 
-Unfortunately, the sequences themselves are not available yet. Once those are available, they can be aligned and matched against the ~650bp DNA barcodes collected from 2018-2022.
+Each file in that link needs to be placed in the "mBRAVE data/" directory when downloaded for the scripts to properly execute.
 
-For now however, working with the extrapolated identification of species available from the Metabarcoding data can take place.
+## Comparison of derived species from DNA Barcoding data:
+Unfortunately, the sequences for the bulk metabarcoding data are not available yet. Once those are available, they can be aligned and matched against the ~650bp DNA barcodes collected from 2018-2022. For now however, working with the extrapolated identification of species available from the Metabarcoding data can take place. It's rudimentary, but does allow for the targetted selection of insect species to DNA barcode using longer read sequencing of COI-5P in the future.
 
-Once the bulk Metabarcoding sequences are made available, the sequences can be aligned and compared against the ~650bp from the whole specimen sequences.
-
+## Workflow:
 Basically, the work flow will be 'InsectsArctic' with data flowing into 'InsectsArctic_2024' then onwards to 'InsectsArctic-2025'.
+
+The data from 'InsectsArctic' will be split by year, community, and broken up into sections over the summer representing specific naturally occurring conditions being met.
 
 # InsectsArctic:
 [InsectsArctic](https://github.com/hominidae/InsectsArctic) is the original code written and developed during my MSc at the University of Guelph. Most of the DNA Barcoding specimens from this analysis were from 2018-2019, however some are from periods in between. After 2022, most of the collected malaise trap samples were bulk metabarcoded instead.
