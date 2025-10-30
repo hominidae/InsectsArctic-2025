@@ -2,10 +2,10 @@
 # InsectsArctic-2025
 This code is intended for the analysis of DNA Barcoding specimens collected in the Kitikmeot region of Nunavut. It'll require working with whole specimen sequences and metabarcode sequences.
 
-## Older samples (2018-2021)
+### Older samples (2018-2021)
 were submitted to the Barcode of Life Datasystem via the Centre for Biodiversity genomics at the University of Guelph. These are considered whole specimen sequences, as a result they are approximately ~650bp reads of the COI5P DNA barcode region.
 
-## Newer samples (2022-2024)
+### Newer samples (2022-2024)
 were processed using a metabarcoding approach which resulted in shorter reads (150bp-400bp) of the COI5P DNA barcode region.
 
 The Metabarcoding data is available via Google Drive via this link: [2022-2024 Metabarcoding results](https://drive.google.com/drive/folders/1BJ3ADx4dtjJ7CCvT_0YDmxkVAyypIod_?usp=drive_link)
