@@ -1,3 +1,4 @@
+
 # InsectsArctic-2025
 This code is intended for the analysis of DNA Barcoding specimens collected in the Kitikmeot region of Nunavut.
 
@@ -19,18 +20,31 @@ To make things simple, we'll list the code in that repository here and it's inpu
 
 Repository Directory Listing:
 001_LoadSequencingData.R - This is the sequencing data from multiple datasets collected by Polar and ARCBIO in the Kitikmeot.
-002_LoadBOLDData.R - This combines the sequencing data with it's associated data/metadata related to it's collection into a singel data package.
+
+002_LoadBOLDData.R - This combines the sequencing data with it's associated data/metadata related to it's collection into a single data package.
+
 003_ProcessBOLDData.R - This deals with all publicly available sequencing data from BOLD from across Canada by province/territory. useful later for comparison and drawing links between the Arctic, sub-Arctic, and the rest of Canada.
+
 004_ProcessGBIFData.R - This deals with the Global Biodiversity Information Facility research grade observations. Not used.
+
 005_OwnDataOnly.R - This works with data from scripts 001 and 002. Kitikmeot insect specimens and their DNA barcodes.
+
 006_CompareKitikmeotAgainstOwnData.R - Takes other publicly shared DNA barcodes from BOLD that were collected in the Kitikmeot to compare against own collected data.
+
 007_UniqueCommunityBINMapping.R - Intercommunity comparision within the Kitikmeot by matching BINs.
+
 008_UniqueBINLines.R - Draws a line on a map of Nunavut between matching BINs in Canada from publicly available BOLD specimens.
+
 008_UniqueIntercommunityBINMapping.R - Draws the links between communities in the Kitikmeot to each other.
+
 009_iNEXT.R - Species Accumulation curbes using the Shannon diversity index. Basically, comparing sampling effort and the number of species present over time. Steep curve, high biodiversity. Shallow curve, lower biodiversity.
+
 010_DistanceBoxplots.R - Various boxplots, but comparing house flies and mosquitoes to house flies and mosquitoes and other Nearctic species or synanthropic species means relatively little. Filtering those out, the boxplot would look very different.
+
 011_DrawMultipleMapsPerBIN.R - BIN by BIN comparison map and their links to the rest of Canada.
-012_ClimateData.R - Comparison of climate data from Environment and Climate Change Canada from the local airports in 1950's to present.
+
+012_ClimateData.R - Downloads climate data from Environment and Climate Change Canada from the local airports in 1950's to present.
+
 013_ClimateDataAverage.R - Generation of climate averages decade by decade. Warmer winters mean more insects survive diapause or via other overwintering strategies. Colder winters kill more organisms not explicitly adapted for Arctic conditions. 
 
 ## InsectsArctic_2024
